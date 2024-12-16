@@ -1,0 +1,49 @@
+#calendar {
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e95b52;
+}
+.calendar-header button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.5rem;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.calendar-header button:hover {
+    font-weight: 600;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+.day {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.day:hover {
+    background-color: #f0f0f0;
+}
+.day.today {
+    background-color: #e95b52;
+    color: white;
+    font-weight: bold;
+}
+.day.inactive {
+    color: #aaa;
+    cursor: default;
+}
